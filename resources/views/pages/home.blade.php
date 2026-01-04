@@ -2,6 +2,9 @@
 @section('title', 'Home')
 
 @section('content')
-@include('partials.hero')
+<div>
+    @include('partials.hero')
+    @include('partials.features')
+</div>
 
 @endsection
