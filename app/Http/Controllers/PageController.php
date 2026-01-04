@@ -15,7 +15,25 @@ class PageController extends Controller
     }
 
     public function services() {
-        return view('pages.services');
+        $services = [
+            [
+                'title' => 'Web Development',
+                'description' => 'Building responsive and modern websites.'
+            ],
+            [
+                'title' => 'SEO Optimization',
+                'description' => 'Improving your website ranking on search engines.'
+            ],
+            [
+                'title' => 'Digital Marketing',
+                'description' => 'Creating effective online marketing strategies.'
+            ],
+            [
+                'title' => 'Mobile App Development',
+                'description' => 'Designing user-friendly mobile applications.'
+            ]
+        ];
+        return view('pages.services', ['services' => $services]);
     }
 
     public function contact() {
